@@ -1,0 +1,5 @@
+titre : Mangas
+type : 0
+forum : 11
+
+Un manga, c'est une BD (Bande dessinée) japonaise. Ils n'ont pas le même style de dessins, et n'ont pas le même format de publication. Ils sont plus petits, format de poche et se lit de droite à gauche. Ce type de lecture rencontre de plus en plus de succès depuis quelques années.

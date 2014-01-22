@@ -1,0 +1,27 @@
+/*##################################################################################################
+#
+# ---- Styling for Internet Explorer
+#
+##################################################################################################*/
+#sidebar input[type="text"] {line-height: 40px;}
+#homepage-slider img {
+	background: transparent; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);       /* IE6 & 7 */ 
+	zoom: 1;
+}
+header ul li a, header ul li a:hover,
+header ul li a.active-tab 					{position: relative; behavior: url(PIE.htc);}
+header ul li a:hover 						{-pie-background: rgba(0,0,0,0.15);}
+header ul li a.active-tab:hover 			{-pie-background: rgba(255,255,255,1);}
+input[type="text"].text-field 				{line-height: 40px;}
+.sf-menu li ul li a:hover 					{behavior: none;}
+.cboxPhoto									{max-width: none;}
+.shadow-xsmall, 
+.shadow-small,
+.shadow-medium, 
+.shadow-large {
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);       /* IE6 & 7 */ 
+	zoom: 1;
+}

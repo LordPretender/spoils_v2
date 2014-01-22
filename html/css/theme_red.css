@@ -1,0 +1,34 @@
+/*##################################################################################################
+#
+# ---- RED Theme
+#
+##################################################################################################*/
+body 								{background: url(../images/theme_red/body.gif);}
+header 								{background: url(../images/theme_red/header.gif);}
+footer 								{background: url(../images/theme_red/footer.gif);}
+.sf-menu a.active-tab 				{color: #bf6969;}
+.sf-menu li ul 						{border: 5px solid #bf6969;}
+.sf-menu li ul li a					{color: #bf6969 !important;}
+.sf-menu li ul li a:hover			{background: #bf6969;}
+.testimonials-inner 				{background: url(../images/theme_red/testimonial-inner.gif);}
+.testimonials-inner a 				{color: #bf6969;}
+.tweet_list li a, .footer_list li a 					{color: #bf6969;}
+.post-widget a 						{color: #bf6969;}
+.menu-widget ul li a:hover 			{border-left: 5px solid #bf6969;}
+.pagination li.pag-prev a:hover,
+.pagination li.pag-next a:hover,
+.pagination li.pag-number a:hover 	{color: #bf6969 !important;}
+.pagination li.pag-prev a 			{background: url(../images/theme_red/pag_prev.png) no-repeat;}
+.pagination li.pag-next a 			{background: url(../images/theme_red/pag_next.png) no-repeat;}
+.pagination li.pag-number a 		{background: url(../images/theme_red/pag_number.png) no-repeat;}
+.email-address a 					{color: #bf6969;}
+#header-bottom 						{background: url(../images/theme_red/header_bottom.gif) repeat-x;}
+#main h1.special span 				{background: url(../images/theme_red/body.gif);}
+#main a 							{color: #bf6969;}
+#comment-submit 					{background: url(../images/theme_red/submit.png) no-repeat 0 0;}
+#comment-submit:hover 				{color: #bf6969;}
+#footer-top 						{background: url(../images/theme_red/footer_top.gif) repeat-x;}
+#footer-bottom 						{background: url(../images/theme_red/footer_bottom.gif) repeat-x;}
+#bottom ul li a:hover 				{color: #bf6969;}
+::selection 						{color: #fff; background-color: #bf6969;}
+::-moz-selection 					{color: #fff; background-color: #bf6969;}

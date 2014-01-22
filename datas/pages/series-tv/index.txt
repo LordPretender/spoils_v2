@@ -1,0 +1,5 @@
+titre : Séries TV
+type : 0
+forum : 12
+
+Au cinéma, nous trouvons assez régulièrement des films en plusieurs parties, car l'histoire, l'univers, est tellement importante qu'un film ne suffit généralement pas. D'où l’expansion des Séries TV. Une telle série est découpée en épisodes et en saisons et un épisode dure en moyenne 45 minutes. L'avantage d'une série, c'est que nous n'avons pas de contraintes de temps.

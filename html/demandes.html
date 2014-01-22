@@ -1,0 +1,22 @@
+                    	            <p>{$fichier_contenu}</p>
+									<table>
+										<tr>
+											<th width="5%">#</th>
+											<th width="20%">Titre</th>
+											<th width="20%">Login</th>
+											<th width="15%">IP</th>
+											<th width="20%">Type</th>
+											<th width="20%">Date</th>
+										</tr>
+										
+		                                {loop="demandes"}
+										<tr>
+											<td>{$key}</td>
+											<td>{$value.titre}</td>
+											<td>{$value.login}</td>
+											<td>{$value.ip}</td>
+											<td>{$value.mode}</td>
+											<td>{$value.date}</td>
+										</tr>
+        		                        {/loop}
+									</table>

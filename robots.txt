@@ -1,0 +1,12 @@
+User-Agent: *
+Allow: /
+
+User-agent: *
+Disallow: /admin/
+Disallow: /classes/
+Disallow: /datas/
+Disallow: /html/
+Disallow: /includes/
+Disallow: /pages/
+Disallow: /tmp/
+Disallow: /cron.php

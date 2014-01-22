@@ -1,0 +1,5 @@
+titre : Animes
+type : 0
+forum : 7
+
+Un anime, ou japanime ou encore animé, correspond aux dessins animés japonais avec, comme pour les mangas, leur style bien à eux, très reconnaissable. Les épisodes durent, en général, 20 minutes.

@@ -1,0 +1,5 @@
+titre : Comics
+type : 0
+forum : 9
+
+Un comics est une bande dessinée avec un style dont son origine provient des Etats-Unis. A ses débuts, ces bandes dessinées étaient humoristique (d'où son appelation), mais de nos jours, ils traitent désormais de super-héros.

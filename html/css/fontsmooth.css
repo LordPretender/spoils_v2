@@ -1,0 +1,48 @@
+/*
+
+	------------------------------------------------------------------
+	
+	Zero Sum HTML Theme - Font Smoothing Stylesheet
+
+	------------------------------------------------------------------
+
+	NOTE:
+		
+		This is an optional stylesheet that gives the appearance of
+		extra anti-aliasing	on the fonts used in the theme. By 
+		default, this line has been commented out in the HTML
+		files. If you'd like to use it, simply remove the <!--
+		and --> characters...
+	
+		<!--<link rel="stylesheet" href="css/fontsmooth.css">-->
+		
+*/
+
+#homepage-slider h1 				{text-shadow: 0px 0px 1px rgba(77,77,77,0.4);}
+#homepage-slider h2 				{text-shadow: 0px 0px 1px rgba(77,77,77,0.4);}
+#main h1.special 					{text-shadow: 0px 0px 1px rgba(77,77,77,0.4);}
+#main h1 							{text-shadow: 0px 0px 1px rgba(77,77,77,0.4);}
+#main h2, #sidebar h5 				{text-shadow: 0px 0px 1px rgba(21,21,21,0.4);}
+#main p, #sidebar p 				{text-shadow: 0px 0px 1px rgba(102,102,102,0.4);}
+#main p strong, #sidebar p strong 	{text-shadow: 0px 0px 1px rgba(68,68,68,0.4);}
+#main h2.red 						{text-shadow: 0px 0px 1px rgba(191,105,105,0.4);}
+#main h2.green 						{text-shadow: 0px 0px 1px rgba(105,191,134,0.4);}
+#main h2.blue 						{text-shadow: 0px 0px 1px rgba(105,155,191,0.4);}
+#main h2.yellow 					{text-shadow: 0px 0px 1px rgba(191,191,105,0.4);}
+#main blockquote 					{text-shadow: 0px 0px 1px rgba(38,38,38,0.4);}
+#main ul 							{text-shadow: 0px 0px 1px rgba(51,51,51,0.4);}
+#main a 							{text-shadow: 0px 0px 1px rgba(0,0,0,0.2);}
+#bottom p 							{text-shadow: 0px 0px 1px rgba(122,122,122,0.4);}
+#bottom ul li a 					{text-shadow: 0px 0px 1px rgba(122,122,122,0.4);}
+.comment-meta h6 a 					{text-shadow: 0px 0px 1px rgba(21,21,21,0.4);}
+.comment-field, .comment-area 		{text-shadow: 0px 0px 1px rgba(153,153,153,0.4);}
+.testimonials-inner blockquote 		{text-shadow: 0px 0px 1px rgba(76,76,76,0.4);}
+.testimonials-inner p 				{text-shadow: 0px 0px 1px rgba(102,102,102,0.4);}
+.testimonials-inner a 				{text-shadow: 0px 0px 1px rgba(105,155,191,0.4);}
+.testimonials-inner a:hover 		{text-shadow: 0px 0px 1px rgba(36,36,36,0.4);}
+.tweet, .query 						{text-shadow: 0px 0px 1px rgba(229,229,229,0.4);}
+.tweet_list li a 					{text-shadow: 0px 0px 0px rgba(0,0,0,0);}
+.tweet_list li a:hover 				{text-shadow: 0px 0px 1px rgba(229,229,229,0.4);}
+.menu-widget ul li a 				{text-shadow: 0px 0px 0px rgba(102,102,102,0.4);}
+.menu-widget ul li a:hover 			{text-shadow: 0px 0px 0px rgba(38,38,38,0.4);}
+footer p 							{text-shadow: 0px 0px 1px rgba(229,229,229,0.4);}

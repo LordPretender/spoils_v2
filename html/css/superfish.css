@@ -1,0 +1,97 @@
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * 				{margin: 0; padding: 0;}
+.sf-menu 							{line-height: 1.0;}
+.sf-menu ul 						{position: absolute; top: -999em; width: 160px; /* left offset of submenus need to match (see below) */}
+.sf-menu ul li 						{width: 100%;}
+.sf-menu li:hover 					{visibility: inherit; /* fixes IE7 'sticky bug' */}
+.sf-menu li 						{float: left; position: relative;}
+.sf-menu a 							{display: block; position: relative;}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul 				{left: 0; top: 60px; /* match top ul list item height */	z-index: 99;}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul 		{top: -999em;}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul 		{left: 165px; /* match ul width */ top: 0;}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul 		{top: -999em;}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul 		{left: 165px; /* match ul width */ top: 0;}
+
+/*** MAIN SKIN ***/
+.sf-menu 							{font-family: "YanoneBold", Arial, sans-serif; font-size: 23px; float: right;}
+.sf-menu a {
+	padding: 8px 16px 8px 16px;
+	margin-left: 12px;	
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color: #fff;
+}
+.sf-menu a.active-tab, .sf-menu a.active-tab:hover {
+	background-color: #fff;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-shadow: 0px 2px 0px rgba(0,0,0,0.10);
+	-webkit-box-shadow: 0px 2px 0px rgba(0,0,0,0.10);
+	-o-box-shadow: 0px 2px 0px rgba(0,0,0,0.10);
+	-ms-box-shadow: 0px 2px 0px rgba(0,0,0,0.10);
+	box-shadow: 0px 2px 0px rgba(0,0,0,0.10);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0);
+}
+.sf-menu a:hover {
+	background: rgba(0,0,0,0.15);
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-shadow: inset 0px 2px 0px rgba(0,0,0,0.10);
+	-webkit-box-shadow: inset 0px 2px 0px rgba(0,0,0,0.10);
+	-o-box-shadow: inset 0px 2px 0px rgba(0,0,0,0.10);
+	-ms-box-shadow: inset 0px 2px 0px rgba(0,0,0,0.10);
+	box-shadow: inset 0px 2px 0px rgba(0,0,0,0.10);
+	outline: 0;
+}
+.sf-menu li ul {
+	background: url(../images/main/submenu_bg.gif);
+	padding: 10px 0 10px 0;
+	-moz-box-shadow: 0px 0px 12px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0px 0px 12px rgba(0,0,0,0.35);
+	-o-box-shadow: 0px 0px 12px rgba(0,0,0,0.35);
+	-ms-box-shadow: 0px 0px 12px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.35);
+}
+.sf-menu li ul li a {
+	font-family: "YanoneRegular", Arial, sans-serif;
+	font-size: 18px;
+	text-transform: none;
+	letter-spacing: 0.5px;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0);
+	padding: 12px 18px 12px 18px;
+	margin: 0;
+}
+.sf-menu li ul li a:hover {
+	color: #fff !important;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-o-border-radius: 0px;
+	-ms-border-radius: 0px;
+	border-radius: 0px;
+	-moz-box-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+	-o-box-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+	-ms-box-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+}

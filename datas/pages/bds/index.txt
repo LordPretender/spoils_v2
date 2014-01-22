@@ -1,0 +1,5 @@
+titre : BDs
+type : 0
+forum : 8
+
+Une Bande dessinée (BD ou Bédé) est un livre, généralement de grand format et d'une soixantaine de pages, composé d'une succession de d'images (de vignettes), qui, ensemblent, forment une histoire.

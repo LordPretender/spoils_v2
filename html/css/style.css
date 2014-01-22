@@ -1,0 +1,930 @@
+/*
+
+	------------------------------------------------------------------
+	
+	TITLE:   Zero Sum HTML Theme - Main Stylesheet
+	AUTHOR:  Dan Richardson (Subatomic Themes)
+	DATE:    02/04/2012
+	VERSION: 1.0
+
+	------------------------------------------------------------------
+
+	Table of Contents
+	
+	1.  CSS Reset
+	2.  Page Header and Hompepage Slider
+	3.  Main Content
+	4.  Sidebar
+	5.  Blog Post
+	6.  Blog Comments
+	7.  Pagination
+	8.  Portfolio
+	9.  Forms
+	10. Image Containers and Shadows
+	11. Widgets
+	12. Testimonial Slider
+	13. Buttons
+	14. Footer
+	15. Twitter Feed
+	16. Flickr Feed
+	17. Extra Classes
+	18. @FontFace
+	
+*/
+
+/*##################################################################################################
+#
+# ---- 1. CSS Reset
+#
+##################################################################################################*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; }
+body {line-height: 1; }
+ol, ul {list-style: none; }
+blockquote, q {quotes: none; }
+blockquote:before, blockquote:after,q:before, q:after {content: '';	content: none; }
+table {border-collapse: collapse; border-spacing: 0; }
+img {max-width: 100%;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 2. Page Header and Homepage Slider
+#
+##################################################################################################*/
+header               {padding-top: 25px; padding-bottom: 20px;}
+#header-bottom       {height: 20px; margin-bottom: 80px;}
+#slider-container    {height: 620px;}
+#homepage-slider h1  {font-family: "YanoneBold", Arial, sans-serif; font-size: 80px; padding-bottom: 40px; color: #4d4d4d; text-transform: uppercase; letter-spacing: 0.5px; text-align: center;}
+#homepage-slider h2  {font-family: "CreteItalic", Georgia, sans-serif; font-size: 24px; padding: 0 180px 0 180px; line-height: 30px; color: #4d4d4d; text-transform: none; text-align: center;}
+#prev-slide, #next-slide {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background: url(../images/slider/bignav.png) no-repeat;
+	position: absolute;
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 99;
+	opacity: 0.5;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+#prev-slide:hover, #next-slide:hover {opacity: 1;}
+#prev-slide:focus, #next-slide:focus {outline: 0;}
+#prev-slide {left: -80px; bottom: 140px; background-position: 0 0;}
+#next-slide {right: -80px; bottom: 140px; background-position: -60px 0;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 3. Main Content
+#
+##################################################################################################*/
+#main h1.special
+{
+	display: block;
+	padding: 20px 0 30px 0;
+	font-family: "YanoneBold", Arial, sans-serif; 
+	font-size: 40px;
+	color: #4d4d4d;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	background: url(../images/main/h1_bg.png) repeat-x 0 37px;
+}
+#main h1.special span {display: inline-block; padding: 0 10px 0 10px; margin-left: 20px;}
+#main h1.page-title   {font-size: 60px; text-align: center; background: url(../images/main/title_bg.png) no-repeat 50% 0; padding-bottom: 45px;}
+#main h1              {font-family: "YanoneBold", Arial, sans-serif; font-size: 40px; padding-bottom: 16px; color: #4d4d4d; text-transform: uppercase; letter-spacing: 0.5px;}
+#main h2              {font-family: "YanoneRegular", Arial, sans-serif; font-size: 24px; color: #151515; padding: 0 0 10px 0; text-transform: none; letter-spacing: 0.5px;}
+#main h3 			  {font-family: "YanoneRegular", Arial, sans-serif; font-size: 22px; color: #151515; padding: 0 0 20px 0; text-transform: none; letter-spacing: 0.5px;}
+#main h4 			  {font-family: "YanoneRegular", Arial, sans-serif; font-size: 20px; color: #151515; padding: 0 0 20px 0; text-transform: none; letter-spacing: 0.5px;}
+#main h5			  {font-family: "YanoneRegular", Arial, sans-serif; font-size: 18px; color: #151515; padding: 0 0 20px 0; text-transform: none; letter-spacing: 0.5px;}
+#main h6    		  {font-family: "YanoneRegular", Arial, sans-serif; font-size: 14px; color: #151515; padding: 0 0 20px 0; text-transform: none; letter-spacing: 0.5px;}
+#main h2.red		  {color: #bf6969;}
+#main h2.green        {color: #69bf86;}
+#main h2.blue         {color: #699bbf;}
+#main h2.yellow       {color: #bfbf69;}
+#main .intro-text   {
+	font-family: "CreteItalic", Georgia, serif;
+	font-size: 20px;
+	color: #4c4c4c;
+	line-height: 32px;
+	letter-spacing: 0;
+	background: url(../images/main/menu_divider.png) repeat-x 0 100%;
+	margin-bottom: 20px;
+}
+#main p        {font-size: 14px; font-family: Arial, sans-serif; color: #666; line-height: 21px; padding-bottom: 20px; margin-top: -3px;}
+#main p strong {font-weight: bold; color: #444;}
+#main a,       {
+	text-decoration: underline;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+#main a:hover    {color: #000;}
+#main blockquote {
+	display: block;
+	font-family: "CreteItalic", Georgia, serif;
+	font-size: 18px;
+	color: #262626;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+#main blockquote.bq-left     {width: 40%; float: left; text-align: left; padding: 0 20px 0 30px; background: url(../images/main/blockquote.png) repeat-y 0 0;}
+#main blockquote.bq-right    {width: 40%; float: right; text-align: left; padding: 0 30px 0 20px; background: url(../images/main/blockquote.png) repeat-y 100% 0;}
+#main blockquote.bq-centered {float: none; text-align: center; padding: 0 40px 0 40px; background-image: url(../images/main/blockquote.png), url(../images/main/blockquote.png); background-repeat: repeat-y, repeat-y;	background-position: 0 0, 100% 0;}
+#main ul {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #666;
+	line-height: 25px;
+}
+#main ul li             {padding-left: 40px;}
+#main ul.list-blue   li {background: url(../images/main/bullet_blue.png)   no-repeat 16px 9px;}
+#main ul.list-green  li {background: url(../images/main/bullet_green.png)  no-repeat 16px 9px;}
+#main ul.list-red    li {background: url(../images/main/bullet_red.png)    no-repeat 16px 9px;}
+#main ul.list-yellow li {background: url(../images/main/bullet_yellow.png) no-repeat 16px 9px;}
+#main ul.list-grey   li {background: url(../images/main/bullet_grey.png)   no-repeat 16px 9px;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 4. Sidebar
+#
+##################################################################################################*/
+#sidebar h5       {font-family: "YanoneRegular", Arial, sans-serif; font-size: 24px; color: #151515; padding: 0 0 20px 0; text-transform: none; letter-spacing: 0.5px;}
+#sidebar p        {font-size: 14px; font-family: Arial, sans-serif; color: #666; line-height: 21px; padding-bottom: 20px;}
+#sidebar p strong {font-weight: bold; color: #444;}
+#sidebar input[type="text"]{
+	width: 220px;
+	height: 40px;
+	display: block;
+	background: url(../images/main/searchfield.png) no-repeat;
+	border: 0;
+	font-family: "CreteItalic", Georgia, serif;
+	font-size: 14px;
+	color: #999;
+	padding: 0 40px 0 20px;
+}
+#sidebar input[type="submit"]{
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: relative;
+	background: url(../images/main/search_icon.png) no-repeat;
+	border: 0;
+	text-indent: -9999px;
+	float: right;
+	bottom: 40px;
+}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 5. Blog Post
+#
+##################################################################################################*/
+/*.blog-post     {margin-bottom: 80px;}*/
+.blog-post:after, .post-meta:after {content: '\0020'; clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0;}
+.post-meta     {margin-bottom: 30px;}
+.post-meta p   {font-family: "CreteItalic", Georgia, serif !important; font-size: 14px !important; color: #999 !important; padding: 0 !important;}
+.post-meta a   {text-decoration: none !important;}
+.speech-bubble {padding-left: 30px; background: url(../images/main/speech_bubble.png) no-repeat 0 50%;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 6. Blog Comments
+#
+##################################################################################################*/
+.comment-meta p {
+	font-family: "CreteItalic", Georgia, serif !important;
+	font-size: 14px !important;
+	color: #999 !important;
+	padding-bottom: 14px !important;
+} 
+.comment-block img {float: left;}
+.comment-block li {margin-bottom: 60px;}
+.comment-meta, .comment-body {margin-left: 100px;}
+.comment-meta h6, .comment-children h6 {padding-bottom: 8px !important;}
+.comment-meta h6 a, .comment-children h6 a {
+	font-family: "YanoneRegular", Arial, sans-serif;
+	font-size: 24px;
+	color: #151515 !important;
+	text-decoration: none !important;
+	text-transform: none !important;
+}
+.comment-children li {margin: 40px 0 0 0;}
+.comment-children {background: url(../images/main/blockquote.png) repeat-y 0 0; padding: 0 0 0 40px !important;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 7. Pagination
+#
+##################################################################################################*/
+.pagination {text-align: center; padding: 0 0 20px 0; background: url(../images/main/pag_bg.png) no-repeat 50% 0;}
+.pagination li.pag-prev,
+.pagination li.pag-next,
+.pagination li.pag-number {display: inline-block; padding: 0 !important; margin: 10px 0 0 0 !important;}
+.pagination li.pag-prev a,
+.pagination li.pag-next a,
+.pagination li.pag-number a {
+	display: block;
+	font-family: "YanoneBold", Arial, sans-serif;
+	font-size: 18px; 
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #fff !important;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.35) !important;
+	text-decoration: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-o-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
+.pagination li.pag-prev   a:hover,
+.pagination li.pag-next   a:hover,
+.pagination li.pag-number a:hover {background-position: 0 -44px; text-shadow: 0px 1px 0px #fff !important;}
+.pagination li.pag-prev   a       {width: 45px;	height: 39px; padding: 5px 18px 0 0;}
+.pagination li.pag-next   a       {width: 53px;	height: 39px; padding: 5px 0 0 10px;}
+.pagination li.pag-number a       {width: 40px;	height: 39px; padding: 5px 4px 0 0;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 8. Portfolio
+#
+##################################################################################################*/
+.portfolio-categories    {text-align: center;}
+.portfolio-categories li {display: inline-block; padding: 0 !important;}
+.portfolio               {line-height: 0 !important;}
+.portfolio li            {overflow: hidden; float: left; padding: 0 !important; margin: 0 !important;}
+.portfolio li a          {margin: 0 !important;}
+.gallery-item h2         {text-align: center;}
+.gallery-item p          {
+	font-family: "YanoneRegular", Arial, sans-serif !important;
+	font-size: 18px !important;
+	color: #7a7a7a !important;
+	letter-spacing: 0.5px !important;
+	text-align: center;
+	margin: 8px 0 30px 0 !important;
+}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 9. Forms
+#
+##################################################################################################*/
+input[type="text"].text-field,
+input[type="email"].text-field,select,
+textarea.text-area, label {font-family: "CreteItalic", Georgia, serif;	font-size: 14px; color: #999;}
+input[type="text"].text-field, input[type="email"].text-field,select {
+	width: 305px;
+	height: 40px;
+	display: block;
+	background: rgba(255,255,255,0.4);
+	border: 1px dotted rgba(0,0,0,0.2);
+	padding: 0 20px 0 20px;
+	margin: 15px 0 15px 0;
+}
+input[type="text"].text-field:focus, input[type="email"].text-field:focus,select {
+	-moz-box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+	-o-box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+}
+textarea.text-area {
+	/*width: 543px;
+	height: 145px;*/
+	display: block;
+	background: rgba(255,255,255,0.4);
+	border: 1px dotted rgba(0,0,0,0.2);
+	resize: vertical;
+	padding: 14px 20px 20px 20px;
+}
+textarea.text-area:focus {
+	-moz-box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+	-o-box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+}
+#comment-submit {
+	width: 144px;
+	height: 44px;
+	display: block;
+	border: 0;
+	font-family: "YanoneBold", Arial, sans-serif;
+	font-size: 18px; 
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #fff;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.35);
+	padding: 0 4px 4px 0;
+	margin: 30px 0 80px 0;
+}
+#comment-submit:hover {cursor: pointer;	background-position: 0 -44px; text-shadow: 0px 1px 1px rgba(0,0,0,0.1);}
+.success {
+	color: #69bf86 !important; 
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+	border: 1px dotted rgba(0,0,0,0.2);
+	background: rgba(105,191,134,0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+	display: block;
+	position: relative;
+	/*bottom: 20px;*/
+}
+.error {
+	color: #bf6969 !important; 
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+	border: 1px dotted rgba(0,0,0,0.2);
+	background: rgba(191,105,105,0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+	display: block;
+	position: relative;
+	/*bottom: 20px;*/
+}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 10. Image Containers and Shadows
+#
+##################################################################################################*/
+.shadow-xsmall {background: url(../images/main/image-shadow-xsmall.png) no-repeat 50% 100%; padding-bottom: 9px;  }
+.shadow-small  {background: url(../images/main/image-shadow-small.png)  no-repeat 50% 100%; padding-bottom: 12px; }
+.shadow-medium {background: url(../images/main/image-shadow-medium.png) no-repeat 50% 100%; padding-bottom: 17px; }
+.shadow-large  {background: url(../images/main/image-shadow-large.png)  no-repeat 50% 100%; padding-bottom: 26px; }
+.shadow-xsmall, .shadow-small, .shadow-medium, .shadow-large {margin-bottom: 20px;}
+.image-container a {
+	display: block;
+	border: 4px solid #fff;
+	-moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+	-o-box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+	-ms-box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+}
+.image-container a.icon-zoom     {background: url(../images/main/zoom_bg.png)     #fff no-repeat 50% 50%;}
+.image-container a.icon-play     {background: url(../images/main/play_bg.png)     #fff no-repeat 50% 50%;}
+.image-container a.icon-audio    {background: url(../images/main/audio_bg.png)    #fff no-repeat 50% 50%;}
+.image-container a.icon-viewpost {background: url(../images/main/viewpost_bg.png) #fff no-repeat 50% 50%;}
+.image-container a img {
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.image-container a img:hover {opacity: 0;}
+#google-map {
+	width: 672px;
+	height: 272px;
+	display: block;
+	background: #fff;
+	border: 4px solid #fff;
+	-moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+	-o-box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+	-ms-box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 11. Widgets
+#
+##################################################################################################*/
+address p {font-family: Arial, sans-serif; font-size: 14px; font-style: italic; margin-bottom: 20px; line-height: 21px;}
+.street,
+.city,
+.state,
+.postcode 		 {color: #666; padding-left: 30px;}
+.telephone 		 {background: url(../images/icons/phone-small.png) no-repeat; color: #262626; padding-left: 30px;}
+.street          {background: url(../images/icons/home-small.png)  no-repeat; padding-left: 30px;}
+.email-address a {
+	background: url(../images/icons/email-small.png) no-repeat;
+	padding-left: 30px;
+	text-decoration: none;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.email-address a:hover {color: #000;}
+
+.text-widget     {margin-bottom: 20px;}
+
+.menu-widget     {margin-bottom: 40px;}
+.menu-widget li  {font-family: Arial, sans-serif; font-size: 14px; font-weight: bold;}
+.menu-widget ul li a {
+	text-decoration: none;
+	color: #666;
+	line-height: 21px;
+	display: block;
+	/*width: 185px;*/
+	padding: 12px 15px 12px 20px;
+	background: url(../images/main/menu_divider.png) repeat-x 0 100%;
+	border: 0px solid #666;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: border 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: border 0.2s ease-in-out;
+	transition: border 0.2s ease-in-out;
+}
+.menu-widget ul li a:hover {/*width: 180px; */padding: 12px 10px 12px 20px;	color: #262626;}
+.menu-widget .even         {background: url(../images/main/even_bg.png);}
+.menu-widget .odd          {background: url(../images/main/odd_bg.png);}
+
+.post-widget img {float: left;}
+.post-widget p   {font-family: "CreteItalic", Georgia, serif !important; font-size: 12px !important; margin-left: 80px; padding-bottom: 0 !important;}
+.post-widget a   {
+	font-family: "CreteItalic", Georgia, serif;
+	font-size: 14px;
+	text-decoration: none;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.post-widget a:hover {color: #000;}
+.post-widget li      {padding-bottom: 20px; margin-bottom: 20px; background: url(../images/main/menu_divider.png) repeat-x 0 100%;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 12. Testimonial Slider
+#
+##################################################################################################*/
+.testimonials       {background: url(../images/main/testimonial-outer.png); padding: 5px; margin: 20px 0 20px 0;}
+.testimonials-inner {/*height: 150px; */text-align: center; /*padding-bottom: 40px;*/}
+.testimonials-inner blockquote {
+	padding: 35px 120px 35px 120px;
+	/*font-family: "CreteItalic", Georgia, serif;*/
+	font-family: "YanoneBold", Georgia, serif;
+	font-size: 20px;
+	color: #4c4c4c;
+	line-height: 32px;
+        font-style: italic;
+}
+.testimonials-inner p {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #666;
+}
+.testimonials-inner strong {font-weight: bold; color: #242424;}
+.testimonials-inner a {
+	text-decoration: none;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.testimonials-inner a:hover {color: #242424;}
+#prev-test, #next-test{
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	background: url(../images/slider/smallnav.png) no-repeat;
+	position: absolute;
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 99;
+	opacity: 0.5;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+#prev-test:hover, #next-test:hover {opacity: 1;}
+#prev-test:focus, #next-test:focus {outline: 0;}
+#prev-test {left: 40px; bottom: 160px; background-position: 0 0;}
+#next-test {right: 40px; bottom: 160px; background-position: -36px 0;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 13. Buttons
+#
+##################################################################################################*/
+a.button {
+	display: block;
+	float: left;
+	font-family: "YanoneBold", Arial, sans-serif;
+	font-size: 18px; 
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #fff !important;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.35);
+	height: 50px;
+	margin: 10px 0 20px 0;
+	text-decoration: none !important;
+	text-align: left;
+	-moz-transition: all 0.0s ease-in-out !important;
+	-webkit-transition: all 0.0s ease-in-out !important;
+	-o-transition: all 0.0s ease-in-out !important;
+	-ms-transition: all 0.0s ease-in-out !important;
+	transition: all 0.0s ease-in-out !important;
+}
+a.button span               {display: block; line-height: 30px; padding: 5px 0 15px 18px;} 
+a.button.blue:hover, 
+a.button.blue.arrow:hover   {color: #699bbf !important; text-shadow: 0px 1px 0px #fff; background-position: 100% -50px;}
+a.button.red:hover, 
+a.button.red.arrow:hover    {color: #bf6969 !important; text-shadow: 0px 1px 0px #fff; background-position: 100% -50px;}
+a.button.green:hover, 
+a.button.green.arrow:hover  {color: #69bf86 !important; text-shadow: 0px 1px 0px #fff; background-position: 100% -50px;}
+a.button.yellow:hover, 
+a.button.yellow.arrow:hover {color: #bfbf69 !important; text-shadow: 0px 1px 0px #fff; background-position: 100% -50px;}
+a.button.blue:hover span,
+a.button.blue.arrow:hover span, 
+a.button.red:hover span,
+a.button.red.arrow:hover span,
+a.button.green:hover span,
+a.button.green.arrow:hover span,
+a.button.yellow:hover span,
+a.button.yellow.arrow:hover span {background-position: 0 -50px;}
+a.button.blue         {background: url(../images/buttons/blue-a.png) no-repeat scroll 100% 0; padding-right: 30px;}
+a.button.blue span    {background: url(../images/buttons/blue-span.png) no-repeat 0 0;}
+a.button.blue.arrow   {background: url(../images/buttons/blue-a-arrow.png) no-repeat scroll 100% 0; padding-right: 75px;}
+a.button.red          {background: url(../images/buttons/red-a.png) no-repeat scroll 100% 0; padding-right: 30px;}
+a.button.red span     {background: url(../images/buttons/red-span.png) no-repeat 0 0;}
+a.button.red.arrow    {background: url(../images/buttons/red-a-arrow.png) no-repeat scroll 100% 0; padding-right: 75px;}
+a.button.green        {background: url(../images/buttons/green-a.png) no-repeat scroll 100% 0; padding-right: 30px;}
+a.button.green span   {background: url(../images/buttons/green-span.png) no-repeat 0 0;}
+a.button.green.arrow  {background: url(../images/buttons/green-a-arrow.png) no-repeat scroll 100% 0; padding-right: 75px;}
+a.button.yellow       {background: url(../images/buttons/yellow-a.png) no-repeat scroll 100% 0; padding-right: 30px;}
+a.button.yellow span  {background: url(../images/buttons/yellow-span.png) no-repeat 0 0;}
+a.button.yellow.arrow {background: url(../images/buttons/yellow-a-arrow.png) no-repeat scroll 100% 0; padding-right: 75px;}
+
+a.small-button {
+	display: block;
+	font-family: "CreteItalic", Arial, sans-serif;
+	font-size: 14px; 
+	color: #fff !important;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.35);
+	height: 30px;
+	margin: 0;
+	text-decoration: none !important;
+	text-align: left;
+	-moz-transition: all 0.0s ease-in-out !important;
+	-webkit-transition: all 0.0s ease-in-out !important;
+	-o-transition: all 0.0s ease-in-out !important;
+	-ms-transition: all 0.0s ease-in-out !important;
+	transition: all 0.0s ease-in-out !important;
+}
+a.small-button span		    {display: block; line-height: 4px; padding: 9px 7px 14px 18px;} 
+a.small-button.blue:hover   {color: #699bbf !important; text-shadow: 0px 1px 0px #fff; background-position: 100% -30px;}
+a.small-button.red:hover    {color: #bf6969 !important; text-shadow: 0px 1px 0px #fff; background-position: 100% -30px;}
+a.small-button.green:hover  {color: #69bf86 !important; text-shadow: 0px 1px 0px #fff; background-position: 100% -30px;}
+a.small-button.yellow:hover {color: #bfbf69 !important; text-shadow: 0px 1px 0px #fff; background-position: 100% -30px;}
+a.small-button.blue:hover span,
+a.small-button.red:hover span,
+a.small-button.green:hover span,
+a.small-button.yellow:hover span {background-position: 0 -30px;}
+a.small-button.blue         {background: url(../images/buttons/small-blue-a.png) no-repeat scroll 100% 0; padding-right: 18px;}
+a.small-button.blue span    {background: url(../images/buttons/small-blue-span.png) no-repeat 0 0;}
+a.small-button.red          {background: url(../images/buttons/small-red-a.png) no-repeat scroll 100% 0; padding-right: 18px;}
+a.small-button.red span     {background: url(../images/buttons/small-red-span.png) no-repeat 0 0;}
+a.small-button.green        {background: url(../images/buttons/small-green-a.png) no-repeat scroll 100% 0; padding-right: 18px;}
+a.small-button.green span   {background: url(../images/buttons/small-green-span.png) no-repeat 0 0;}
+a.small-button.yellow       {background: url(../images/buttons/small-yellow-a.png) no-repeat scroll 100% 0; padding-right: 18px;}
+a.small-button.yellow span  {background: url(../images/buttons/small-yellow-span.png) no-repeat 0 0;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 14. Footer
+#
+##################################################################################################*/
+#footer-top    {height: 20px;}
+#footer-bottom {height: 20px; background: url(../images/main/footer-bottom.png) repeat-x;}
+footer         {padding: 50px 0 50px 0;}
+footer h1      {
+	font-family: "YanoneBold", Arial, sans-serif;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px #000;
+	letter-spacing: 0.5px;
+	padding-bottom: 30px;
+}
+footer p {
+	font-family: Arial,sans-serif;
+	font-size: 12px;
+	color: #e5e5e5;
+	line-height: 21px;
+	padding: 0 80px 25px 0;
+}
+footer strong {font-weight: bold;}
+footer a img.icon {
+	position: relative;
+	margin-right: 3px;
+	opacity: 0.35;
+	-moz-transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+footer a img.icon:hover {
+	opacity: 1;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.divider-right {background: url(../images/main/footer-divider.png) repeat-y 90% 0;}
+
+#bottom img     {margin: 20px 15px 40px 0; float: left;}
+#bottom p       {font-family: Arial, sans-serif; font-size: 12px; color: #7a7a7a; margin-top: 26px;}
+#bottom ul      {font-family: "YanoneRegular", Arial, sans-serif; letter-spacing: 0.5px; font-size: 18px; float: right;	margin-top: 23px;}
+#bottom ul li   {display: inline;}
+#bottom ul li a {margin-left: 30px; text-decoration: none; color: #7a7a7a;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 15. Twitter Feed
+#
+##################################################################################################*/
+.tweet,
+.query {font-family: Arial,sans-serif; font-size: 12px; color: #e5e5e5; line-height: 20px; padding-right: 80px;}
+.tweet_list {margin: 0; padding: 0; overflow-y: hidden;}
+.tweet_list .awesome, .tweet_list .epic {text-transform: uppercase;}
+.tweet_list li {
+	overflow-y: hidden;
+	overflow-x: hidden;
+	list-style-type: none;
+	padding: 0 0 35px 40px;
+	background: url(../images/icons/twitter-02.png) no-repeat 0 5px;
+}
+.tweet_list li a {
+	text-decoration: none;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.tweet_list li a:hover {
+	color: #e5e5e5;
+	text-decoration: underline;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.tweet_list .tweet_even {}
+.tweet_list .tweet_avatar {padding-right: .5em; float: left;}
+.tweet_list .tweet_avatar img {vertical-align: middle;}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 16. Flickr Feed
+#
+##################################################################################################*/
+#flickr li a     {width: 57px; height: 57px; margin: 0 15px 15px 0;	float: left; background: url(../images/icons/zoom-small.png) no-repeat 60% 60%;}
+#flickr li a img {
+	border: 3px solid #fff;
+	-moz-box-shadow: 0px 2px 2px rgba(0,0,0,1);
+	-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,1);
+	-o-box-shadow: 0px 2px 2px rgba(0,0,0,1);
+	-ms-box-shadow: 0px 2px 2px rgba(0,0,0,1);
+	box-shadow: 0px 2px 2px rgba(0,0,0,1);
+	-moz-transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+#flickr li a img:hover {
+	opacity: 0.4;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+
+
+/*##################################################################################################
+#
+# ---- 17. Extra Classes
+#
+##################################################################################################*/
+.divider{height: 10px; background: url(../images/main/menu_divider.png) repeat-x 0 50%;	margin-bottom: 20px;}
+
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after 						{content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.row:after, .clearfix:after		{clear: both; }
+.row, .clearfix 				{zoom: 1; }
+	  
+/* You can also use a <br class="clear" /> to clear columns */
+.clear 										{clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0;}
+
+.align-left  {float: left  !important; text-align:    left  !important;}
+.align-right {float: right !important; text-align:    right !important;}
+.float-left  {float: left  !important; padding-right: 20px;}
+.float-right {float: right !important; padding-left:  20px;}
+
+.padding-right0   {padding-right:  0    !important;}
+.padding-right10  {padding-right:  10px !important;}
+.padding-right20  {padding-right:  20px !important;}
+.padding-right30  {padding-right:  30px !important;}
+.padding-right40  {padding-right:  40px !important;}
+.padding-right50  {padding-right:  50px !important;}
+.padding-left0    {padding-left:   0    !important;}
+.padding-left10   {padding-left:   10px !important;}
+.padding-left20   {padding-left:   20px !important;}
+.padding-left30   {padding-left:   30px !important;}
+.padding-left40   {padding-left:   40px !important;}
+.padding-left50   {padding-left:   50px !important;}
+.padding-top0     {padding-top:    0    !important;}
+.padding-top10    {padding-top:    10px !important;}
+.padding-top20    {padding-top:    20px !important;}
+.padding-top30    {padding-top:    30px !important;}
+.padding-top40    {padding-top:    40px !important;}
+.padding-top50    {padding-top:    50px !important;}
+.padding-bottom0  {padding-bottom: 0    !important;}
+.padding-bottom10 {padding-bottom: 10px !important;}
+.padding-bottom20 {padding-bottom: 20px !important;}
+.padding-bottom30 {padding-bottom: 30px !important;}
+.padding-bottom40 {padding-bottom: 40px !important;}
+.padding-bottom50 {padding-bottom: 50px !important;}
+
+.margin-right0    {margin-right:   0    !important;}
+.margin-right10   {margin-right:   10px !important;}
+.margin-right20   {margin-right:   20px !important;}
+.margin-right30   {margin-right:   30px !important;}
+.margin-right40   {margin-right:   40px !important;}
+.margin-right50   {margin-right:   50px !important;}
+.margin-left0     {margin-left:    0    !important;}
+.margin-left10    {margin-left:    10px !important;}
+.margin-left20    {margin-left:    20px !important;}
+.margin-left30    {margin-left:    30px !important;}
+.margin-left40    {margin-left:    40px !important;}
+.margin-left50    {margin-left:    50px !important;}
+.margin-top0      {margin-top:     0    !important;}
+.margin-top10     {margin-top:     10px !important;}
+.margin-top20     {margin-top:     20px !important;}
+.margin-top30     {margin-top:     30px !important;}
+.margin-top40     {margin-top:     40px !important;}
+.margin-top50     {margin-top:     50px !important;}
+.margin-top60     {margin-top:     60px !important;}
+.margin-top70     {margin-top:     70px !important;}
+.margin-top80     {margin-top:     80px !important;}
+.margin-bottom0   {margin-bottom:  0    !important;}
+.margin-bottom10  {margin-bottom:  10px !important;}
+.margin-bottom20  {margin-bottom:  20px !important;}
+.margin-bottom30  {margin-bottom:  30px !important;}
+.margin-bottom40  {margin-bottom:  40px !important;}
+.margin-bottom50  {margin-bottom:  50px !important;}
+
+#pub_728{
+    margin: -40px 0 40px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#pub_300{
+    width: 100%;
+    text-align: center;
+}
+
+
+/*##################################################################################################
+#
+# ---- 18. @FontFace
+#
+##################################################################################################*/
+@font-face {
+	font-family: 'YanoneRegular';
+	src: url('../fonts/YanoneKaffeesatz-Regular-webfont.eot');
+	src: url('../fonts/YanoneKaffeesatz-Regular-webfont.eot?iefix') format('eot'),
+	url('../fonts/YanoneKaffeesatz-Regular-webfont.woff') format('woff'),
+	url('../fonts/YanoneKaffeesatz-Regular-webfont.ttf') format('truetype'),
+	url('../fonts/YanoneKaffeesatz-Regular-webfont.svg#webfontZam02nTh') format('svg');
+	font-weight: normal;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'YanoneBold';
+	src: url('../fonts/YanoneKaffeesatz-Bold-webfont.eot');
+	src: url('../fonts/YanoneKaffeesatz-Bold-webfont.eot?iefix') format('eot'),
+	url('../fonts/YanoneKaffeesatz-Bold-webfont.woff') format('woff'),
+	url('../fonts/YanoneKaffeesatz-Bold-webfont.ttf') format('truetype'),
+	url('../fonts/YanoneKaffeesatz-Bold-webfont.svg#webfontZam02nTh') format('svg');
+	font-weight: normal;
+	font-style: normal; 
+}
+		
+@font-face {
+	font-family: 'CreteItalic';
+	src: url('../fonts/CreteRound-Italic-webfont.eot');
+	src: url('../fonts/CreteRound-Italic-webfont.eot?iefix') format('eot'),
+	url('../fonts/CreteRound-Italic-webfont.woff') format('woff'),
+	url('../fonts/CreteRound-Italic-webfont.ttf') format('truetype'),
+	url('../fonts/CreteRound-Italic-webfont.svg#webfontZam02nTh') format('svg');
+	font-weight: normal;
+	font-style: normal; 
+}
+
+
+/*##################################################################################################
+#
+# ---- 19. Bloc liste dans footer
+#
+##################################################################################################*/
+.footer_list {margin: 0; padding: 0; overflow-y: hidden;}
+.footer_list .awesome, .footer_list .epic {text-transform: uppercase;}
+.footer_list li {
+	overflow-y: hidden;
+	overflow-x: hidden;
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+.footer_list li a {
+	text-decoration: none;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.footer_list li a:hover {
+	color: #e5e5e5;
+	text-decoration: underline;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+th, td {
+	border: 1px solid #666;
+	padding: 5px;
+}

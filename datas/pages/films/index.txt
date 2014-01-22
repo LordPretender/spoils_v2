@@ -1,0 +1,6 @@
+titre : Films
+type : -1
+contributeurs : 0
+forum : 10
+
+Un film est un groupement d'images réalisé soit par des photos (à l'époque) soit par des caméras soit par informatique. Toutes ces images associées donnent une impression de mouvement, donne de la vie à ces images. Elles forment un film et racontent une histoire lorsqu'elles sont triées dans un ordre bien particulier.

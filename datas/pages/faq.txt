@@ -1,0 +1,53 @@
+titre : FAQ
+contributeurs : 0, 2, 2, 0, 0
+
+Bienvenue sur la Foire aux questions, l'espace qui répond à toutes vos questions. 
+Si vous ne trouviez pas réponse à votre question, vous pouvez utiliser le forum accessible sur chaque pages via le bouton "Critiques / Discussions".
+
+[À propos de l'administrateur]
+
+L'administrateur, Duy PHAM, né le 26 octobre 1984, n'est pas développeur Web, mais développeur d'application chez Naturex.
+
+[Wiki ?]
+
+Le site utilise un Wiki entièrement développé par l'administrateur. Mais qu'est-ce donc ? Il s'agit d'un site collaboratif où tout le monde est invité à partager, mettre en commun ses connaissances, afin que tout le monde puisse en profiter et apprendre de nouvelles choses.
+
+En temps normal, n'importe qui peut créer ou modifier des pages, selon son désir, sans modération. Sans système de contrôle, un système d'approbation par exemple, un Wiki peut très vite tomber en ruine.
+Le wiki utilisé est unique en son genre puisqu'il intègre nativement un système de modération, afin d'empêcher les contributeurs d'écrire n'importe quoi sur les pages existantes et de détruire ainsi le travail des autres.
+
+[S'inscrire ?]
+
+Le site est équipé d'un forum où il faut s'inscrire. Mais, pour contribuer, être inscrit n'est pas obligatoire. En revanche, à chaque contribution, vous aurez à saisir votre login et votre adresse mail.
+Ainsi, tout le monde peut participer à la vie du site, sans devoir s'inscrire.
+
+[Comment s'inscrire ?]
+
+L'administrateur a souhaité différencier le forum du site. Ainsi, pour vous inscrire, vous devez vous rendre sur le forum, via le bouton "Critiques / Discussions" -> M'enregistrer.
+
+Petite remarque très importante pour les contributeurs qui tentent de s'inscrire : veuillez utiliser le même nom d'utilisateur et la même adresse e-mail. Sinon, lors de vos prochaines contributions, le formulaire retournera une erreur.
+Si vous n'avez pas suivi cette instruction, merci de contacter l'administrateur.
+
+[Contribuer]
+
+Contribuer, c'est créer ou modifier des pages et des catégories. 
+Pour cela, vous devez vous rendre sur la catégorie dans laquelle vous souhaitez créer une nouvelle page/catégorie ou vous rendre sur la page à modifier.
+
+Une fois sur la bonne page, vous trouverez (si permis) divers liens :
+ - Nouvelle page : sert à créer une nouvelle page ;
+ - Modifier la page : sert à modifier la page/catégorie en cours ;
+ - Nouvelle catégorie : sert à créer une nouvelle catégorie.
+
+Petite précision concernant la création de catégories : dans le formulaire, vous retrouverez aussi une liste déroulante intitulée "Type de pages de la future catégorie" qui permet de définir un type au pages/catégories qu'elle contiendra.
+Ainsi, pour créer une nouvelle série (dans Séries TV), il faudra définir "Saison" comme type car, la série est découpée en saisons puis en épisodes.
+
+Dernière chose à savoir : toutes les pages connaissent le type de pages qu'ils hébergent. Ainsi, lors de la création d'une saison, il est inutile de spécier le type dans le titre. Ne renseigner que le numéro de la saison (avec éventuellement le titre).
+
+Après avoir cliqué sur l'un de ces liens, vous n'aurez alors plus qu'à remplir le formulaire qui apparaîtra. Si vous n'êtes pas inscrit et connecté, mémorisez votre login et votre email, car ils vous seront demandés pour toutes les prochaines participations (ils devront correspondre).
+
+Un mail sera envoyé à l'administrateur, afin de lui faire part de votre demande. Lorsqu'il l'aura traitée et validée, vous recevrez, à votre tour, un mail de confirmation. Veillez à vous assurer que le mail ne se trouve pas dans le dossier SPAM.
+
+[Les statistiques]
+
+Le nombre de catégories correspond au nombre de de thèmes, de séries, de saisons… tandis que le nombre de pages correspond au nombre de pages d'introduction des catégories, mais aussi des films, des épisodes, des chapitres, etc.
+
+Une page peut être modifiée plusieurs fois et par plusieurs personnes. En effectuant ce calcul sur l'ensemble, nous obtenons le nombre de contributions.

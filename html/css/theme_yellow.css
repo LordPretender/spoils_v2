@@ -1,0 +1,34 @@
+/*##################################################################################################
+#
+# ---- YELLOW Theme
+#
+##################################################################################################*/
+body 								{background: url(../images/theme_yellow/body.gif);}
+header 								{background: url(../images/theme_yellow/header.gif);}
+footer 								{background: url(../images/theme_yellow/footer.gif);}
+.sf-menu a.active-tab 				{color: #bfbf69;}
+.sf-menu li ul 						{border: 5px solid #bfbf69;}
+.sf-menu li ul li a					{color: #bfbf69 !important;}
+.sf-menu li ul li a:hover			{background: #bfbf69;}
+.testimonials-inner 				{background: url(../images/theme_yellow/testimonial-inner.gif);}
+.testimonials-inner a 				{color: #bfbf69;}
+.tweet_list li a 					{color: #bfbf69;}
+.post-widget a 						{color: #bfbf69;}
+.menu-widget ul li a:hover 			{border-left: 5px solid #bfbf69;}
+.pagination li.pag-prev a:hover,
+.pagination li.pag-next a:hover,
+.pagination li.pag-number a:hover 	{color: #bfbf69 !important;}
+.pagination li.pag-prev a 			{background: url(../images/theme_yellow/pag_prev.png) no-repeat;}
+.pagination li.pag-next a 			{background: url(../images/theme_yellow/pag_next.png) no-repeat;}
+.pagination li.pag-number a 		{background: url(../images/theme_yellow/pag_number.png) no-repeat;}
+.email-address a 					{color: #bfbf69;}
+#header-bottom 						{background: url(../images/theme_yellow/header_bottom.gif) repeat-x;}
+#main h1.special span 				{background: url(../images/theme_yellow/body.gif);}
+#main a 							{color: #bfbf69;}
+#comment-submit 					{background: url(../images/theme_yellow/submit.png) no-repeat 0 0;}
+#comment-submit:hover 				{color: #bfbf69;}
+#footer-top 						{background: url(../images/theme_yellow/footer_top.gif) repeat-x;}
+#footer-bottom 						{background: url(../images/theme_yellow/footer_bottom.gif) repeat-x;}
+#bottom ul li a:hover 				{color: #bfbf69;}
+::selection 						{color: #fff; background-color: #bfbf69;}
+::-moz-selection 					{color: #fff; background-color: #bfbf69;}

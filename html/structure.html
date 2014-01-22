@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="fr"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="fr"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="fr"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="fr"> <!--<![endif]-->
+<head>
+    <!--  Basic Meta and Title -->
+    <meta charset="utf-8">
+    <title>{$meta_title}{if="$pagination > 1"} - Page {$pagination}{/if}</title>
+    <meta name="description" content="{if="$pagination > 1"}Page {$pagination}... {/if}{$meta_description}" />
+    <meta name="author" content="LordPretender">
+    <meta name="keywords" content="{$site_keywords}" />
+	
+    <!-- Mobile Device Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{$site_tpl}css/formalize.css">
+    <link rel="stylesheet" href="{$site_tpl}css/style.css">
+    <link rel="stylesheet" href="{$site_tpl}css/layout.css">
+    <link rel="stylesheet" href="{$site_tpl}css/superfish.css">
+    <link rel="stylesheet" href="{$site_tpl}css/devices.css">
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="{$site_tpl}css/ie.css">
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{$site_tpl}css/theme_red.css" title="theme_red" media="screen" />
+
+    <!--[if lt IE 9]>
+        <script src="{$site_tpl}js/html5.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{$site_tpl}images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="{$site_tpl}images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{$site_tpl}images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{$site_tpl}images/favicons/apple-touch-icon-114x114.png">
+
+    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/spoils/RqLB" title="Les dernières modifications.">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="{$site_tpl}js/jquery.textPlaceholder.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".text-field").textPlaceholder();
+            $(".text-area").textPlaceholder();
+            $(".search-field").textPlaceholder();
+        });
+    </script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32301432-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+</head>
+<body>
+    <!-- Page Header START -->
+    <header>
+        <div class="container">
+            <div class="two columns">
+                <a href="/"><img src="{$site_tpl}images/main/logo.png" alt="" /></a>
+            </div>
+
+            <!-- Navigation START -->
+            <div class="ten columns">
+                <nav>
+                    <ul class="sf-menu">
+                        <li><a{if="$fichier_slug == '' || ($fichier_racine == '' && !$fichier_type)"} class="active-tab"{/if} href="/" title="Accueil">Accueil</a></li>
+                        {loop="themes"}
+                        <li><a{if="$fichier_racine == $key || $fichier_slug == $key"} class="active-tab"{/if} href="/{$key}/" title="{$value}">{$value}</a></li>
+                        {/loop}
+                    </ul>
+                </nav>
+            </div>
+            <!-- Navigation END -->
+        </div>
+    </header>
+    <div id="header-bottom"></div>
+    <!-- Page Header END -->
+
+
+    <section class="container">
+        
+        <!-- Main Content START -->
+        <div id="main">
+            <div id="pub_728">
+                <script type="text/javascript"><!--
+                    google_ad_client = "ca-pub-5126470956370561";
+                    google_ad_slot = "4372856667";
+                    google_ad_width = 728;
+                    google_ad_height = 90;
+                    //-->
+                </script>
+                <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+            </div>
+            
+            <div class="eight columns">
+                <h1 class="page-title">{$fichier_titre}</h1>
+
+                {include="$contenu"}
+            </div>
+        </div>
+        <!-- Main Content END -->
+
+        <!-- Sidebar Content START -->
+        <div id="sidebar" class="four columns">
+            <aside>
+                
+                <div class="search-widget">
+                    <form class="search-form" id="search-form" action="/recherche/" method="post">
+                        <fieldset>
+                            <input type="text" class="search-field" value="" id="keyword" name="keyword" placeholder="Recherche..." />
+                            <input type="submit" id="search-submit" value="Lancer">
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="menu-widget">
+                    <h5>Navigation{if="$approbateur"} (+){/if}</h5>
+
+                    <ul>
+						<li class="odd"><a href="#" onclick="window.open('http://participation.easy-hebergement.fr/1d3cc52372661e6c3d33cf94947a818b8a12db3f','','toolbar=0, location=0, directories=0, status=1, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=520, height=730');return(false)">Faire un Don</a></li>
+                    {loop="navigation"}
+                        <li {if="$key & 1"}class="odd"{else}class="even"{/if}><a href="{$value.slug}" title="{$value.titre}">{$value.titre}</a></li>
+                    {/loop}
+                    </ul>
+                </div>
+				
+				{if="$module_approbateur"}
+                <div class="menu-widget">
+                    <h5>Approbateur</h5>
+
+                    <ul>
+                    {loop="module_approbateur"}
+                        <li {if="$key & 1"}class="odd"{else}class="even"{/if}><a href="{$value.slug}" title="{$value.titre}">{$value.titre}</a></li>
+                    {/loop}
+                    </ul>
+                </div>
+				{/if}
+                <div id="bloc_300" class="text-widget">
+                    <div id="pub_300">
+                        <script type="text/javascript"><!--
+                                google_ad_client = "ca-pub-5126470956370561";
+                                google_ad_slot = "0129757549";
+                                google_ad_width = 300;
+                                google_ad_height = 250;
+                        //-->
+                        </script>
+                        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                        </script>
+                    </div>
+                </div>
+                
+                {if="$module_demandes"}
+                <div class="menu-widget">
+                    <h5>Catégories en attente</h5>
+
+                    <ul>
+                    {loop="module_demandes"}
+                        <li {if="$counter & 1"}class="odd"{else}class="even"{/if}><a href="{$key}" title="{$value}">{function="résumer(40, $value)"}</a></li>
+                    {/loop}
+                    </ul>
+                </div>
+                {/if}
+                
+                {if="$changements"}
+                <div class="menu-widget">
+                    <h5>Dernières modifications</h5>
+
+                    <ul>
+                    {loop="changements"}
+                        <li {if="$counter & 1"}class="odd"{else}class="even"{/if}><a href="{$key}" title="{$value}">{function="résumer(40, $value)"}</a></li>
+                    {/loop}
+                    </ul>
+                </div>
+                {/if}
+
+            </aside>
+        </div>
+        <!-- Sidebar Content END -->
+        
+    </section>
+
+    <!-- Testimonial Slider START -->
+    <div class="container">
+        <section class="testimonials">
+
+            <div class="testimonials-inner">
+                <ul id="testimonial-slider">
+
+                    <li>
+                        <blockquote>Spoils.fr, en tant que site de diffusion de résumés, n'est en rien propriétaire des oeuvres originales synthétisées.</blockquote>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+    </div>
+    <!-- Testimonial Slider END -->
+
+    <!-- Footer START -->
+    <div id="footer-top"></div>
+    <footer class="centered">
+            <div class="container">
+                
+                <div class="four columns divider-right">
+                    <h1>Partenaires</h1>
+
+                    <ul class="footer_list">
+                        {loop="partenaires"}
+                            <li><a href="{$value.url}" title="{$value.titre}">{$value.titre}</a></li>
+                        {/loop}
+                    </ul>
+                </div>
+
+                <div class="four columns divider-right">
+                    <h1>Statistiques</h1>
+
+                    <p>{$stats}</p>
+                </div>
+
+                <div class="four columns">
+                    <h1>Le site</h1>
+                    <p>WIKI, avec système d'approbation, entièrement développé en PHP par LordPretender.</p>
+                    <a href="http://feeds.feedburner.com/spoils/RqLB"><img class="icon" src="{$site_tpl}images/icons/rss.png" alt="" /></a>
+                    <a href="http://www.facebook.com/SpoilsSpoils"><img class="icon" src="{$site_tpl}images/icons/facebook.png" alt="" /></a>
+                    <a href="https://twitter.com/LordPretender"><img class="icon" src="{$site_tpl}images/icons/twitter.png" alt="" /></a>
+                </div>
+
+            </div>
+    </footer>
+    <div id="footer-bottom"></div>
+    <!-- Footer END -->
+
+    <!-- Logo and Copyright START -->
+    <section id="bottom">
+        <div class="container centered">
+
+            <div class="five columns">
+                <a href="index.html">
+                    <img src="{$site_tpl}images/main/logo-footer.png" alt="" />
+                </a>
+                <p>Copyright &copy; 2012 - {function="date('Y')"}</p>
+            </div>
+
+            <div class="seven columns">
+                <ul>
+                    <li><a href="/" title="Accueil">Accueil</a></li>
+                    {loop="themes"}
+                    <li><a href="/{$key}/" title="{$value}">{$value}</a></li>
+                    {/loop}
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <!-- Logo and Copyright END -->
+</body>
+</html>

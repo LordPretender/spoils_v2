@@ -1,0 +1,26 @@
+titre : A propos
+contributeurs : 0, 2, 0
+
+[A propos]
+
+Le site existe depuis le 2 février 2012. Il existe depuis plus longtemps mais a utilisé diverses applications qui ne convenaient pas. 
+Le 7 août, l'administrateur a fini par développer son propre Wiki, avec système d'approbation, entièrement développé en PHP. Le design, quant à lui, a été modifié afin de correspondre aux besoins du site.
+
+Pourquoi créer un site de spoil assumé ? Tout simplement par la passion des mangas et des animes. Mais aussi le plaisir d'aller au cinéma, regarder de bons films et de bonnes séries tv. Mais surtout, par le goût du partage, d'écrire.
+
+[Fonctionnalités]
+
+Le site utilise un Wiki avec système d'approbation. En effet, il vous faudra faire une demande de création/modification de page/catégories. Une fois qu'un approbateur aura pris connaissance de votre souhait et traité votre demande, vous recevrez, à votre tour un mail de confirmation de validation.
+
+Le site utilise aussi un forum phpBB et, grâce à une passerelle (entièrement développée par l'administrateur), le Wiki a évolué :
+ - Toutes les créations de pages donnent lieu à des créations de forums (ou sujet de discussion).
+ - Le site utilise la session du forum pour simplifier la vie de l'utilisateur, si ce dernier est inscrit et connecté.
+ - Sur toutes les pages, se trouvent des liens vers les profils des contributeurs inscrits.
+
+Le site est compatible sur tous les navigateurs (évitez Internet Explorer malgré tout) et s'adapte automatiquement pour les mobiles.
+
+Pour plus d'information, n'hésitez pas à vous rendre sur la FAQ ou sur le forum via le bouton "Critiques / Discussions".
+
+[Remerciements]
+
+Merci à mon frère ainsi qu'à ma compagne pour leur intérêt dans mes projets ; à vous lecteurs, contributeurs et rédacteurs pour faire vivre ce site, votre participation.

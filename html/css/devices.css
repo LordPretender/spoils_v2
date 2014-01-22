@@ -1,0 +1,212 @@
+/*
+
+	---------------------------------------------------
+	
+	Zero Sum HTML Theme - Styles for Mobile Devices
+	and smaller screen resolutions (iPad, iPhone etc..)
+
+	---------------------------------------------------
+
+*/
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	#header-bottom 					{margin-bottom: 60px;}
+	#slider-container 				{height: 580px;}
+	#prev-slide 					{left: 320px; bottom: -10px;}
+	#next-slide 					{right: 320px; bottom: -10px;}
+	#homepage-slider h2 			{padding: 0 80px 0 80px;}
+	#prev-test 						{left: 40px; bottom: 174px;}
+	#next-test 						{right: 40px; bottom: 174px;}
+	#bottom ul li a 				{margin-left: 20px;}
+	#sidebar input[type="text"]		{width: 172px; background: url(../images/main/searchfield_small.png) no-repeat;}
+	#google-map 					{width: 528px;}
+	textarea.text-area 				{width: 514px;}
+	footer a img.icon 				{margin-right: 0;}
+	.sf-menu 						{font-size: 20px; margin-top: 2px;}
+	.menu-widget ul li a 			{/*width: 137px; */padding: 12px 15px 12px 20px;}
+	/*.menu-widget ul li a:hover 		{width: 132px;}*/
+	/*.testimonials-inner 			{height: 180px;}*/
+        
+        #bloc_300{display: none;}
+        .bloc_comments {display: none;}
+}
+
+/* All Mobile Sizes (devices and browsers) */
+@media only screen and (max-width: 767px) {
+    #pub_728 {display: none;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	header 							{text-align: center;}
+	.sf-menu 						{float: none; margin: 0 40px 0 40px; padding-top: 0; font-size: 18px;}
+	.sf-menu a 						{display: block; width: 300px; border-top: 1px dotted rgba(0,0,0,0.1); margin-left: 0;}
+	.sf-menu li:hover ul,
+	.sf-menu li.sfHover ul 			{left: 220px; top: 0;}
+	ul.sf-menu li li:hover ul,	
+	ul.sf-menu li li.sfHover ul 	{left: -175px;}
+	ul.sf-menu li li li:hover ul,
+	ul.sf-menu li li li.sfHover ul 	{left: 165px;}
+	
+	.sf-menu a:hover, .sf-menu a.active-tab, .sf-menu a.active-tab:hover {
+		background: transparent;
+		background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.08)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 50%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 50%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 50%,rgba(0,0,0,0) 100%); /* IE10+ */
+		background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 50%,rgba(0,0,0,0) 100%); /* W3C */
+		color: #fff !important;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+		/* Overides original border radius and shadows */
+		-moz-border-radius: 0px; -webkit-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px; -moz-box-shadow: 0px 0px 0px rgba(0,0,0,0); -webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0); -o-box-shadow: 0px 0px 0px rgba(0,0,0,0); box-shadow: 0px 0px 0px rgba(0,0,0,0);
+	}
+	
+	.sf-menu li ul 					{text-align: left; font-size: 16px;}
+	.sf-menu li ul a 				{width: 125px; border: 0;}
+	#main h2.intro-text 			{font-size: 16px;}
+	#header-bottom 					{margin-bottom: 40px;}
+	#slider-container 				{height: 440px;}
+	#homepage-slider h1 			{font-size: 60px;}	
+	#homepage-slider h2 			{font-size: 16px; padding: 0;}
+	#prev-slide, #next-slide		{width: 36px; height: 36px;  background: url(../images/slider/smallnav.png) no-repeat;}
+	#prev-slide 					{left: 160px; bottom: 10px; background-position: 0 0;}
+	#next-slide 					{right: 160px; bottom: 10px; background-position: -36px 0;}
+	#main h1.special 				{background: transparent;}
+	#main h1.special span 			{background: transparent; padding: 0; margin: 0;}
+	#main h1 						{padding-bottom: 10px;}
+	/*.testimonials-inner 			{height: 200px;}*/
+	.testimonials-inner blockquote 	{font-size: 16px; line-height: 24px; padding: 35px 60px 35px 60px;}
+	#prev-test 						{left: 12px; bottom: 210px;}
+	#next-test 						{right: 12px; bottom: 210px;}
+	#google-map 					{width: 412px;}
+	footer 							{padding-top: 0;}
+	footer h1 						{padding: 50px 0 25px 0;}
+	footer p 						{padding: 0 0 25px 0;}
+	.divider-right 					{background: transparent;}
+	.tweet, .query 					{padding-right: 0; border-bottom: 1px dotted rgba(0,0,0,0.2);}
+	.tweet_list li 					{padding: 20px 20px 20px 20px; background: rgba(0,0,0,0.08);	border-top: 1px dotted rgba(0,0,0,0.2);	border-right: 1px dotted rgba(0,0,0,0.2); border-left: 1px dotted rgba(0,0,0,0.2);}
+	#flickr li a 					{margin: 0 13px 15px 0;}
+	#bottom p 						{margin-top: 5px;}
+	#bottom img 					{float: none; margin: 20px 0 0 0;}
+	#bottom ul 						{float: none; font-size: 16px; margin: 40px 0 40px 0;}
+	#bottom ul li a 				{margin: 0 15px 0 15px;}
+	.row 							{padding-bottom: 0; margin-bottom: 0;}
+	.column, .columns 				{padding-bottom: 30px;}
+	
+	/* An extra class to center elements where needed */
+	.centered, 
+	.align-right, 
+	.align-left,
+        #main h1.special                                {text-align: center !important; float: none !important;}
+	.float-left,
+	.float-right					{float: none !important;}
+	
+	.comment-children 				{background: rgba(255,255,255,0.4); padding: 0 40px 0 0 !important; margin: 40px 0 40px 0 !important; border: 1px dotted rgba(0,0,0,0.2);}
+	input[type="text"].text-field,
+	textarea.text-area 				{width: 418px;}
+	#sidebar input[type="submit"]	{right: 200px;}
+	/*.menu-widget ul li a 			{width: 385px;}
+	.menu-widget ul li a:hover 		{width: 380px;}*/
+	.post-widget li 				{background: none;}
+	.post-meta p 					{font-size: 12px !important; padding-bottom: 10px !important;}
+	.margin-right20					{margin-right: 0 !important;}
+	.cboxPhoto 						{max-width: 380px;}
+	
+	.shadow-large  {background: url(../images/main/image-shadow-medium.png) no-repeat 50% 100%; padding-bottom: 17px; }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+	header 							{text-align: center; font-size: 17px;}
+	.sf-menu 						{float: none; margin: 0 40px 0 40px; padding-top: 0; font-size: 18px; text-align: left;}
+	.sf-menu a 						{display: block; width: 180px; border-top: 1px dotted rgba(0,0,0,0.1); margin-left: 0;}
+	.sf-menu li:hover ul, 
+	.sf-menu li.sfHover ul 			{left: 100px; top: 0;}
+	ul.sf-menu li li:hover ul,
+	ul.sf-menu li li.sfHover ul 	{left: -145px;}
+	ul.sf-menu li li li:hover ul,
+	ul.sf-menu li li li.sfHover ul 	{left: 135px;}
+	
+	.sf-menu a:hover, .sf-menu a.active-tab, .sf-menu a.active-tab:hover {
+		background: transparent;
+		background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.08)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 50%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 50%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 50%,rgba(0,0,0,0) 100%); /* IE10+ */
+		background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 50%,rgba(0,0,0,0) 100%); /* W3C */
+		color: #fff !important;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+		/* Overides original border radius and shadows */
+		-moz-border-radius: 0px; -webkit-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px; -moz-box-shadow: 0px 0px 0px rgba(0,0,0,0); -webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0); -o-box-shadow: 0px 0px 0px rgba(0,0,0,0); box-shadow: 0px 0px 0px rgba(0,0,0,0);
+	}
+	
+	.sf-menu li ul 					{text-align: left; font-size: 16px;}
+	.sf-menu li ul a 				{width: 125px; border: 0;}
+	a.button 						{float: none; width: 234px;}
+	#main h2.intro-text 			{font-size: 14px;}
+	#header-bottom 					{margin-bottom: 35px;}
+	#slider-container 				{height: 360px;}
+	#homepage-slider h1 			{font-size: 40px;}
+	#homepage-slider h2 			{font-size: 14px; padding: 0 0 20px 0; line-height: 20px;}
+	#prev-slide, #next-slide		{width: 36px; height: 36px;  background: url(../images/slider/smallnav.png) no-repeat;}
+	#prev-slide 					{left: 100px; bottom: 10px; background-position: 0 0;}
+	#next-slide 					{right: 100px; bottom: 10px; background-position: -36px 0;}
+	#main h1.special 				{background: transparent;}
+	#main h1.special span 			{background: transparent; padding: 0; margin: 0;}
+	/*.testimonials-inner 			{height: 210px;}*/
+	.testimonials-inner blockquote 	{font-size: 14px; line-height: 22px; padding: 35px 40px 35px 40px;}
+	.testimonials-inner p 			{font-size: 8px; text-transform: uppercase; padding: 0 40px 0 40px; line-height: 16px;}
+	#prev-test 						{left: 6px; bottom: 230px;}
+	#next-test 						{right: 6px; bottom: 230px;}
+	#google-map 					{width: 292px;}
+	footer 							{padding-top: 0;}
+	footer h1 						{padding: 50px 0 25px 0;}
+	footer p 						{padding: 0 0 25px 0;}
+	.divider-right 					{background: transparent;}
+	.tweet, .query 					{padding-right: 0; border-bottom: 1px dotted rgba(0,0,0,0.2);}
+	.tweet_list li 					{padding: 20px 20px 20px 20px; background: rgba(0,0,0,0.08);	border-top: 1px dotted rgba(0,0,0,0.2);	border-right: 1px dotted rgba(0,0,0,0.2); border-left: 1px dotted rgba(0,0,0,0.2);}
+	#flickr li a 					{margin: 0 18px 18px 0;}
+	#bottom p 						{margin-top: 5px;}
+	#bottom img 					{float: none; margin: 20px 0 0 0;}
+	#bottom ul 						{float: none; font-size: 12px; text-transform: uppercase; margin: 40px 0 40px 0;}
+	#bottom ul li a 				{margin: 0 8px 0 8px;}
+	.row 							{padding-bottom: 0; margin-bottom: 0;}
+	.column, .columns 				{padding-bottom: 30px;}
+	
+	/* An extra class to center elements where needed */
+	.centered,
+	.align-right,
+	.align-left,
+        #main h1.special 					{text-align: center !important; float: none !important;}
+	.float-left,
+	.float-right					{float: none !important;}
+	
+	.comment-children 				{background: rgba(255,255,255,0.4); padding: 0 40px 0 0 !important; margin: 40px 0 40px 0 !important; border: 1px dotted rgba(0,0,0,0.2);}
+	input[type="text"].text-field,
+	textarea.text-area 				{width: 298px;}
+	#sidebar input[type="submit"]	{right: 80px;}
+	/*.menu-widget ul li a 			{width: 265px;}
+	.menu-widget ul li a:hover 		{width: 260px;}*/
+	.post-widget li 				{background: none;}
+	.post-meta p 					{font-size: 12px !important; padding-bottom: 10px !important;}
+	.speech-bubble 					{padding-left: 0; background: none;}
+	#main blockquote 				{font-size: 14px; line-height: 21px;}
+	.comment-meta, .comment-body 	{margin-left: 0;}
+	.comment-meta p 				{font-size: 12px !important;}
+	.comment-block img 				{margin: 0 20px 20px 0;}
+	.margin-right20					{margin-right: 0 !important;}
+	.cboxPhoto 						{max-width: 210px;}
+	#cboxTitle 						{visibility: hidden;}
+	
+	.shadow-medium {background: url(../images/main/image-shadow-small.png) no-repeat 50% 100%; padding-bottom: 9px; }
+	.shadow-large  {background: url(../images/main/image-shadow-small.png) no-repeat 50% 100%; padding-bottom: 9px; }
+}
